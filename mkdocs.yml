@@ -1,0 +1,13 @@
+site_name: 盛世开源
+nav:
+  - Home: index.md
+  - 教育软件:
+    - 'Writing your docs': 'education/app-mlearning.md'
+    - 'Styling your docs': 'styling-your-docs.md'
+  - 电力软件:
+    - '输电线路激光点云解决方案': 'power/lidar.md'
+    - '基于深度学习的点云分类系统': 'power/lidar-deeplearning.md'
+    - '输电线路巡检大数据分析系统': 'power/lidar-qxk.md'
+    - '综合管廊智能巡检与综合监控': 'power/zhgl.md'
+  - 关于我们: about.md
+theme: readthedocs
