@@ -1,5 +1,7 @@
 site_name: 盛世开源
-site_favicon: favicon.ico
+site_description: 软件产品展示
+site_author: Pastoral
+
 nav:
   - Home: index.md
   - 教育软件:
@@ -7,14 +9,15 @@ nav:
     - 'EarthView三维地球教学软件': 'education/earthview.md'
     - '学历教育乐学通': 'education/xueli-lexuetong.md'
     - '高职乐学通': 'education/gaozhi-lexuetong.md'
-    - '享学吧': 'education/xueli-lexuetong.md'
+    - '享学吧': 'education/xiangxueba.md'
+    - '网络教育学生服务平台': 'education/xueli-sns.md'
     - '学习平台elcms': 'education/elcms.md'
     - '教学资源管理平台': 'education/resu.md'   
     - '图书馆学科知识服务平台': 'education/skp.md'   
     - '后勤服务预约与申报系统': 'education/houqin-service.md'   
     - '设备采购管理系统': 'education/shebeicaigou.md'   
     - '教室资源管理系统': 'education/jiaoshiziyuan.md'   
-    - '实验室安全及在线考试系统': 'education/shiyashi-test.md'   
+    - '实验室安全及在线考试系统': 'education/shiyanshi-test.md'   
     - '技能型人才就业服务平台': 'education/dkjob.md'   
     - '远程学历教育综合运营平台': 'education/xueliyunying.md'   
     - '职业教育学习平台': 'education/zhiyejiaoyu-lms.md'   
@@ -78,10 +81,10 @@ nav:
     - '局部放电三维模型': 'develop/Chart3DDesigner.md'
   - 服务:
     - '开源软件':
-      - 'Sakai': 'os-sakai.md'
-      - 'Dokeos': 'os-dokeos.md'
-      - 'PHPCMS': 'os-phpcms.md'
-      
+      - 'Sakai': 'opensource/os-sakai.md'
+      - 'Dokeos': 'opensource/os-dokeos.md'
+      - 'PHPCMS': 'opensource/os-phpcms.md'
+      - 'GoTS': 'opensource/GoTS/docu/README.md'
     - '咨询培训': ''
     - '软件重构': ''
     - '定制开发': ''

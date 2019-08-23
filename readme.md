@@ -4,6 +4,12 @@
 
 本文档是mkdocs-asmatrix项目的开发文档,不是网站内容文件.
 
+## 工作日志
+
+2019.08.23  拿起来继续,app.asmatrix.com
+  没有搜索引擎收录,如何解决?试下AWS S3
+  不支持中文搜索
+
 ## 安装
 
 ```!/bin/bash
@@ -55,7 +61,16 @@ GitHub project pages 和Amazon S3 是不错的选择，只需上传 site 目录�
 * 提交并同步，访问：huhongjun.github.io
 
 * DNS provider 配置CNAME：app指向huhongjun.github.io
-* huhongjun.github.io仓库设置自定义域名app.asmatri.com
+* huhongjun.github.io仓库设置自定义域名app.asmatrix.com
 * 访问app.asmatrix.com
 
 ### Amazon S3发布
+
+## 目录文件说明
+
+\docs       md文件,用于生成静态网页
+\docs-TBD   可用网站内容素材,用完即删
+\site       生成静态网站目录
+\word       word另存为html,同样用于提供素材或直接作为静态网站页面
+mkdocs.yml  md生成网站时的菜单定义
+readme.md  项目说明文档  
