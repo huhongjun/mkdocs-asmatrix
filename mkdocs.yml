@@ -2,92 +2,109 @@ site_name: 盛世开源
 site_description: 软件产品展示
 site_author: Pastoral
 
+repo_name: 'GitHub: 产品文档'
+repo_url: 'https://github.com/huhongjun/demo.git'
+
 nav:
-  - Home: index.md
   - 教育软件:
-    - 'Writing your docs': 'education/app-mlearning.md'
-    - 'EarthView三维地球教学软件': 'education/earthview.md'
-    - '学历教育乐学通': 'education/xueli-lexuetong.md'
-    - '高职乐学通': 'education/gaozhi-lexuetong.md'
-    - '享学吧': 'education/xiangxueba.md'
-    - '网络教育学生服务平台': 'education/xueli-sns.md'
-    - '学习平台elcms': 'education/elcms.md'
-    - '教学资源管理平台': 'education/resu.md'   
-    - '图书馆学科知识服务平台': 'education/skp.md'   
-    - '后勤服务预约与申报系统': 'education/houqin-service.md'   
-    - '设备采购管理系统': 'education/shebeicaigou.md'   
-    - '教室资源管理系统': 'education/jiaoshiziyuan.md'   
-    - '实验室安全及在线考试系统': 'education/shiyanshi-test.md'   
-    - '技能型人才就业服务平台': 'education/dkjob.md'   
-    - '远程学历教育综合运营平台': 'education/xueliyunying.md'   
-    - '职业教育学习平台': 'education/zhiyejiaoyu-lms.md'   
+    - EarthView三维地球教学软件: education/earthview.md
+    - 学历教育乐学通: education/xueli-lexuetong.md
+    - 高职乐学通: education/gaozhi-lexuetong.md
+    - 享学吧: education/xiangxueba.md
+    - 网络教育学生服务平台: education/xueli-sns.md
+    - 学习平台elcms: education/elcms.md
+    - 教学资源管理平台: education/resu.md   
+    - 图书馆学科知识服务平台: education/skp.md   
+    - 后勤服务预约与申报系统: education/houqin-service.md   
+    - 设备采购管理系统: education/shebeicaigou.md   
+    - 教室资源管理系统: education/jiaoshiziyuan.md   
+    - 实验室安全及在线考试系统: education/shiyanshi-test.md   
+    - 技能型人才就业服务平台: education/dkjob.md   
+    - 远程学历教育综合运营平台: education/xueliyunying.md   
+    - 职业教育学习平台: education/zhiyejiaoyu-lms.md   
+    - Writing your docs: education/app-mlearning.md
  
   - 电力软件:
-    - '输电线路激光点云解决方案': 'power/lidar.md'
-    - '基于深度学习的点云分类系统': 'power/lidar-deeplearning.md'
-    - '输电线路巡检大数据分析系统': 'power/lidar-bigdata.md'
-    - '综合管廊智能巡检与综合监控': 'power/zhgl.md'
-    - '全景影像拍摄制作与展示解决方案': 'power/globe360.md'
-    - '直升机巡检海量数据存储管理系统': 'power/als-store.md'
-    - '航巡缺陷库管理系统': 'power/lidar-qxk.md'
-    - '全景影像拍摄制作与展示解决方案': 'power/globe360.md'
-    - '全景影像拍摄制作与展示解决方案': 'power/globe360.md'
-    - '输电线路差异化防雷性能及措施评估系统': 'power/thunder.md'
-    - '国网智能化分析管控系统与直升机无人机巡检集成方案': 'power/lidar-integration.md'
-    - 'aa': 'power/aa.md'
-    - 'aa': 'power/aa.md'
-    - 'aa': 'power/aa.md'
-    - 'aa': 'power/aa.md'
+    - 输电线路激光点云解决方案: power/lidar.md
+    - 基于深度学习的点云分类系统: power/lidar-deeplearning.md
+    - 输电线路巡检大数据分析系统: power/lidar-bigdata.md
+    - 综合管廊智能巡检与综合监控: power/zhgl.md
+    - 全景影像拍摄制作与展示解决方案: power/globe360.md
+    - 直升机巡检海量数据存储管理系统: power/als-store.md
+    - 航巡缺陷库管理系统: power/lidar-qxk.md
+    - 全景影像拍摄制作与展示解决方案: power/globe360.md
+    - 全景影像拍摄制作与展示解决方案: power/globe360.md
+    - 输电线路差异化防雷性能及措施评估系统: power/thunder.md
+    - 国网智能化分析管控系统与直升机无人机巡检集成方案: power/lidar-integration.md
+    - aa: power/aa.md
 
   - 课程课件:
-    - '1.1	社会化学习课程': 'course/sociallearning.md'
-    - '1.2	发展力': 'course/fazhanli.md'
-    - '新生入学指南': 'course/xinshengruxue.md'
-    - '销售人员职业素养': 'course/cs-sales.md'
-    - '目标与时间管理': 'course/cs-objective.md'
-    - '处级领导干部管理素质与领导力测评': 'course/cs-sales.md'
-    - '处级领导干部能力提升-角色转变': 'course/cs-sales.md'
-    - '人保财险-销售系列课程': 'course/cs-sales.md'
-    - '人保财险 - 团队激励': 'course/cs-sales.md'
-    - '人保财险 - 有效增员': 'course/cs-sales.md'
-    - '学习型组织建设': 'course/cs-learningorg.md'
-    - '电子杂志-北京航天信息培训学校': 'course/cs-sales.md'
-    - '国电安规游戏化课程': 'course/cs-sales.md'
-    - '嘉实基金新员工入职培训课程': 'course/cs-sales.md'
-    - '3.1	课件封装框架': 'course/cs-sales.md'
-    - '首都医科大学中医药文化教育特色资源库': 'course/cs-sales.md'
-    - '3.3	HTML5教育小游戏': 'course/cs-sales.md'
-    - '游戏化测验': 'course/cs-sales.md'
-    - '3.3	HTML5教育小游戏': 'course/cs-sales.md'
-    - '3.3	HTML5教育小游戏': 'course/cs-sales.md'
-
-  - 企业应用:
-    - '协同办公平台': 'software/cop.md'
-    - '集团全面预决算管理': 'software/budget.md'
-    - '企业IT资产管理': 'software/itdb.md'
-    - 电子商务:
-      - '体育场馆在线预订平台': 'eshop/dsweb.md'
-    - 移动App:
-      - '拜尔口腔': 'power/aa.md'
-      - '身边牙医': 'power/aa.md'
-      - '力帆重卡': 'power/aa.md'
-      - '智慧教育推广App': 'power/aa.md'
-    - 建站:
-      - '教育培训': 'website/site-edu.md'
-      - '机构门户': 'website/site-org.md'
-  - 开发:
-    - 'KME': 'power/aa.md'
-    - 'Kurogo': 'power/aa.md'
-    - '局部放电三维模型': 'develop/Chart3DDesigner.md'
-  - 服务:
-    - '开源软件':
-      - 'Sakai': 'opensource/os-sakai.md'
-      - 'Dokeos': 'opensource/os-dokeos.md'
-      - 'PHPCMS': 'opensource/os-phpcms.md'
-      - 'GoTS': 'opensource/GoTS/docu/README.md'
-    - '咨询培训': ''
-    - '软件重构': ''
-    - '定制开发': ''
+    - 社会化学习课程: course/sociallearning.md
+    - 发展力: course/fazhanli.md
+    - 新生入学指南: course/xinshengruxue.md
+    - 销售人员职业素养: course/cs-sales.md
+    - 目标管理与时间管理: course/cs-objective.md
+    - 处级领导干部管理素质与领导力测评: course/cs-sales.md
+    - 处级领导干部能力提升-角色转变: course/cs-sales.md
+    - 人保财险-销售系列课程: course/cs-sales.md
+    - 人保财险 - 团队激励: course/cs-sales.md
+    - 人保财险 - 有效增员: course/cs-sales.md
+    - 学习型组织建设: course/cs-learningorg.md
+    - 电子杂志-北京航天信息培训学校: course/cs-sales.md
+    - 国电安规游戏化课程: course/cs-sales.md
+    - 嘉实基金新员工入职培训课程: course/cs-sales.md
+    - 课件封装框架: course/cs-sales.md
+    - 首都医科大学中医药文化教育特色资源库: course/cs-sales.md
+    - HTML5教育小游戏: course/cs-sales.md
+    - 游戏化测验: course/cs-sales.md
     
+  - 企业应用:
+    - 协同办公平台: software/cop.md
+    - 集团全面预决算管理: software/budget.md
+    - 企业IT资产管理: software/itdb.md
+    - 体育场馆在线预订平台: software/dsweb.md
+    - 移动App: software/app.md
+    - 网站建设: website/site.md
+  - 开发服务:
+    - 开源软件: opensource/opensource.md
+    - 咨询培训: service/consulting.md
+    - 定制开发: service/customdev.md
+    - 在线演示: service/demo.md
   - 关于我们: about.md
-theme: amelia
+
+theme:
+  name: material
+  language: 'zh'
+
+extra:
+  search:
+    language: 'jp'
+
+extra_javascript:
+  - 'js/extra.js'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
