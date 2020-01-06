@@ -7,14 +7,14 @@ repo_url: 'https://github.com/huhongjun/demo.git'
 
 nav:
   - 教育软件:
-    - EarthView三维地球教学软件: education/earthview.md
+    - 三维地球教学软件: education/earthview.md
     - 学历教育乐学通: education/xueli-lexuetong.md
     - 高职乐学通: education/gaozhi-lexuetong.md
     - 享学吧: education/xiangxueba.md
     - 网络教育学生服务平台: education/xueli-sns.md
     - 学习平台elcms: education/elcms.md
     - 教学资源管理平台: education/resu.md   
-    - 图书馆学科知识服务平台: education/skp.md   
+    - 学科知识服务平台: education/skp.md   
     - 后勤服务预约与申报系统: education/houqin-service.md   
     - 设备采购管理系统: education/shebeicaigou.md   
     - 教室资源管理系统: education/jiaoshiziyuan.md   
@@ -22,8 +22,7 @@ nav:
     - 技能型人才就业服务平台: education/dkjob.md   
     - 远程学历教育综合运营平台: education/xueliyunying.md   
     - 职业教育学习平台: education/zhiyejiaoyu-lms.md   
-    - Writing your docs: education/app-mlearning.md
- 
+
   - 电力软件:
     - 输电线路激光点云解决方案: power/lidar.md
     - 基于深度学习的点云分类系统: power/lidar-deeplearning.md
@@ -32,12 +31,21 @@ nav:
     - 全景影像拍摄制作与展示解决方案: power/globe360.md
     - 直升机巡检海量数据存储管理系统: power/als-store.md
     - 航巡缺陷库管理系统: power/lidar-qxk.md
-    - 全景影像拍摄制作与展示解决方案: power/globe360.md
-    - 全景影像拍摄制作与展示解决方案: power/globe360.md
     - 输电线路差异化防雷性能及措施评估系统: power/thunder.md
-    - 国网智能化分析管控系统与直升机无人机巡检集成方案: power/lidar-integration.md
-    - aa: power/aa.md
+    - 智能管控与航巡集成方案: power/lidar-integration.md
 
+  - 物流软件:
+    - 国家邮政包刷分拣处理系统: 'psmis.md'
+    - 公路货运综合处理系统: 'cargomis,md'
+    
+  - 企业应用:
+    - 协同办公平台: software/cop.md
+    - 集团全面预决算管理: software/budget.md
+    - 企业IT资产管理: software/itdb.md
+    - 体育场馆在线预订平台: software/dsweb.md
+    - 移动App: software/app.md
+    - 网站建设: website/site.md
+    
   - 课程课件:
     - 社会化学习课程: course/sociallearning.md
     - 发展力: course/fazhanli.md
@@ -58,19 +66,15 @@ nav:
     - HTML5教育小游戏: course/cs-sales.md
     - 游戏化测验: course/cs-sales.md
     
-  - 企业应用:
-    - 协同办公平台: software/cop.md
-    - 集团全面预决算管理: software/budget.md
-    - 企业IT资产管理: software/itdb.md
-    - 体育场馆在线预订平台: software/dsweb.md
-    - 移动App: software/app.md
-    - 网站建设: website/site.md
   - 开发服务:
     - 开源软件: opensource/opensource.md
     - 咨询培训: service/consulting.md
     - 定制开发: service/customdev.md
     - 在线演示: service/demo.md
-  - 关于我们: about.md
+
+  - 关于我们: 
+    - 项目清单: about/projectlist.md
+    - 我们是谁: about/about.md
 
 theme:
   name: material

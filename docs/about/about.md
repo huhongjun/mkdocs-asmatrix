@@ -14,8 +14,10 @@ pendentemque ungues vescitur humo.
 - Saturatos parmam ancipitesque umeris retro est magni
 - Velamine subtemen iamdudum Pulchrior saucia puerum instantem
 
-## 相关网站
+## 更多信息
 
-https://sites.google.com/a/osmatrix.info/courseengine/
+头条号: [乌泡子](https://www.toutiao.com/c/user/3374838388/)
+微信公众号: IT那些事儿
+博客：[比特酋长](http://huhongjun.blogspot.com/)
 
 ## FAQ
