@@ -35,8 +35,12 @@ nav:
     - 智能管控与航巡集成方案: power/lidar-integration.md
 
   - 物流软件:
-    - 国家邮政包刷分拣处理系统: 'psmis.md'
-    - 公路货运综合处理系统: 'cargomis,md'
+    - 国家邮政包刷分拣处理系统: 'logistics/psmis.md'
+    - 公路货运综合处理系统: 'logistics/cargomis.md'
+
+  - 网站建设:
+    - 企业网站: website/site-org.md
+    - 教育网站: website/site-edu.md
     
   - 企业应用:
     - 协同办公平台: software/cop.md
@@ -44,7 +48,6 @@ nav:
     - 企业IT资产管理: software/itdb.md
     - 体育场馆在线预订平台: software/dsweb.md
     - 移动App: software/app.md
-    - 网站建设: website/site.md
     
   - 课程课件:
     - 社会化学习课程: course/sociallearning.md

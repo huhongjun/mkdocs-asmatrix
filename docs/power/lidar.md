@@ -2,7 +2,7 @@
 
 利用直升机/无人机平台搭载激光雷达扫描系统，可获取目标物及周边环境的高密度、高精度点云和光学影像数据。煜邦激光LiDAR数据处理分析软件，提供专业激光点云数据处理、展示与分析工具。
 
-![LiDAR 三维展示](http://192.168.1.122/ImageLib/11-产品截图/lidar/lidar-002.jpg)
+![LiDAR 三维展示](http://static1.asmatrix.com/ImageLib/11-产品截图/lidar/lidar-002.jpg)
 
 ## 系统功能
 
@@ -10,7 +10,7 @@
 实现目标物及周边物体的快速、高精度三维量测和空间分析；
 提供DEM、DSM、DOM等各类数据产品。
 
-![电力通道](http://192.168.1.122/ImageLib/11-产品截图/lidar/lidar-001.jpg)
+![电力通道](http://static1.asmatrix.com/ImageLib/11-产品截图/lidar/lidar-001.jpg)
 
 电力行业典型应用——国家电网公司、南方电网公司：  
 三维点云大数据快速自动处理；

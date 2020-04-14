@@ -8,7 +8,32 @@
   没有搜索引擎收录,如何解决?试下AWS S3
   不支持中文搜索
 
+## 搭建环境
+
+D:/miniconda3/scripts/activate mkdocs
+
+pip install mkdocs-material
+pip install pymdown-extensions
+
+mkdocs serve
+
 ## 网站发布
+
+### docker
+
+https://registry.hub.docker.com/r/squidfunk/mkdocs-material
+
+Start development server on http://localhost:8000
+
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+
+Build documentation
+
+docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
+
+Deploy documentation to GitHub Pages
+
+docker run --rm -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy 
 
 ### github发布
 
