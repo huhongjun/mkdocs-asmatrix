@@ -3,7 +3,7 @@ site_description: 软件产品展示
 site_author: Pastoral
 
 repo_name: 'GitHub: 产品文档'
-repo_url: 'https://github.com/huhongjun/demo.git'
+repo_url: 'https://github.com/huhongjun/mkdocs-asmatrix.git'
 
 nav:
   - 教育软件:
