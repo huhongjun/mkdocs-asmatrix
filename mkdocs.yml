@@ -1,15 +1,26 @@
+# Project information
 site_name: 盛世开源
-site_description: 软件产品展示
+site_url: http://static1.asmatrix.com/site-asmatrix
 site_author: Pastoral
+site_description: >-
+  软件产品展示, 涵盖教育、电力和物流。
 
+dev_addr: 192.168.1.63:8100
+
+# Repository, 支持github编辑链接
 repo_name: 'GitHub: 产品文档'
-repo_url: 'https://github.com/huhongjun/mkdocs-asmatrix.git'
+repo_url: 'https://github.com/huhongjun/mkdocs-asmatrix'
+# edit_uri: 'blob/master/docs'
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2020 Hu Hongjun
 
 nav:
+  - Home: index.md
   - 教育软件:
     - 三维地球教学软件: education/earthview.md
-    - 学历教育乐学通: education/xueli-lexuetong.md
-    - 高职乐学通: education/gaozhi-lexuetong.md
+    - 学历教育乐学通: education/lexuetong-xueli.md
+    - 高职乐学通: education/lexuetong-gaozhi.md
     - 享学吧: education/xiangxueba.md
     - 网络教育学生服务平台: education/xueli-sns.md
     - 学习平台elcms: education/elcms.md
@@ -79,39 +90,61 @@ nav:
     - 项目清单: about/projectlist.md
     - 我们是谁: about/about.md
 
+# Configuration
 theme:
   name: material
+  logo: "img/favicon.ico"
   language: 'zh'
+  palette:  
+    primary: 'light blue' # 主色调,影响header,footer等的背景色
+    accent: 'indigo'      # 点击链接相关颜色
+  feature:
+    tabs: true  # 横向导航  
+  custom_dir: docs/resources/
 
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Customization
 extra:
-  search:
-    language: 'jp'
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/huhongjun
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/huhongjun
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/huhongjun/
 
-extra_javascript:
-  - 'js/extra.js'
+#扩展样式
+extra_css:
+  - resources/css/extra.css
 
+# Extensions
 markdown_extensions:
-  - admonition
-  - codehilite:
+  - admonition  # 提示块
+  - footnotes  # 脚注
+  - meta  # 定义元数据，通过文章上下文控制，如disqus
+  - pymdownx.caret  # 下划线上标
+  - pymdownx.tilde  # 删除线下标
+  - pymdownx.critic  # 增加删除修改高亮注释，可修饰行内或段落
+  - pymdownx.details  # 提示块可折叠
+  - pymdownx.inlinehilite  # 行内代码高亮
+  - pymdownx.mark  # 文本高亮
+  - pymdownx.smartsymbols  # 符号转换
+  - pymdownx.superfences  # 代码嵌套在列表里
+  - codehilite:    # 代码高亮，显示行号
       guess_lang: false
-      linenums: false
-  - toc:
+      linenums: true
+  - toc:  # 锚点
       permalink: true
-  - footnotes
-  - meta
-  - def_list
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
+#  - pymdownx.arithmatex  # 数学公式
+  - pymdownx.betterem:  # 对加粗和斜体更好的检测
       smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist
-  - pymdownx.tilde
+#  - pymdownx.emoji:  # 表情
+#      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+#  - pymdownx.magiclink  # 自动识别超链接
+  - pymdownx.tasklist:  # 复选框checklist
+      custom_checkbox: true

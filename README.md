@@ -2,6 +2,7 @@
 
 ## 工作日志
 
+- 2020.12.22  互联网发布容器build, udcoker本地开发启动开发服务器
 - 2019.12.29  远端github仓库demo改为私有，提交全部内容，以后可以生成产品和全集两个站
 - 2019.12.22  整理完照片后回到这里继续=》图片都归入相册，url引用
 - 2019.08.23  拿起来继续,app.asmatrix.com
@@ -28,15 +29,18 @@ https://registry.hub.docker.com/r/squidfunk/mkdocs-material
 
 Start development server on http://localhost:8000
 
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+docker run --rm -it -p 8100:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
 
 Build documentation
 
 docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
 
-Deploy documentation to GitHub Pages
+#### Deploy documentation to GitHub Pages
 
+// 默认发布gh-pages分支
 docker run --rm -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy 
+
+docker run --name mkdocs-asmatrix -p 8001:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
 
 ### github发布
 
