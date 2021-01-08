@@ -39,8 +39,8 @@ nav:
     - 基于深度学习的点云分类系统: power/lidar-deeplearning.md
     - 输电线路巡检大数据分析系统: power/lidar-bigdata.md
     - 综合管廊智能巡检与综合监控: power/zhgl.md
-    - 全景影像拍摄制作与展示解决方案: power/globe360.md
-    - 直升机巡检海量数据存储管理系统: power/als-store.md
+    - 全景影像制作与展示解决方案: power/globe360.md
+    - 直升机巡检数据存储管理系统: power/als-store.md
     - 航巡缺陷库管理系统: power/lidar-qxk.md
     - 输电线路差异化防雷性能及措施评估系统: power/thunder.md
     - 智能管控与航巡集成方案: power/lidar-integration.md
@@ -66,17 +66,17 @@ nav:
     - 新生入学指南: course/xinshengruxue.md
     - 销售人员职业素养: course/cs-sales.md
     - 目标管理与时间管理: course/cs-objective.md
-    - 处级领导干部管理素质与领导力测评: course/cs-sales.md
-    - 处级领导干部能力提升-角色转变: course/cs-sales.md
+    - 干部管理素质与领导力测评: course/cs-sales.md
+    - 干部能力提升-角色转变: course/cs-sales.md
     - 人保财险-销售系列课程: course/cs-sales.md
     - 人保财险 - 团队激励: course/cs-sales.md
     - 人保财险 - 有效增员: course/cs-sales.md
     - 学习型组织建设: course/cs-learningorg.md
-    - 电子杂志-北京航天信息培训学校: course/cs-sales.md
+    - 电子杂志北京航天信息培训学校: course/cs-sales.md
     - 国电安规游戏化课程: course/cs-sales.md
     - 嘉实基金新员工入职培训课程: course/cs-sales.md
     - 课件封装框架: course/cs-sales.md
-    - 首都医科大学中医药文化教育特色资源库: course/cs-sales.md
+    - 中医药文化教育特色资源库: course/cs-sales.md
     - HTML5教育小游戏: course/cs-sales.md
     - 游戏化测验: course/cs-sales.md
     
