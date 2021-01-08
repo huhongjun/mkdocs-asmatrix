@@ -1,44 +1,9 @@
-# TDemo网站建设
+# TDemo产品网站
 
-## ToDo
+## 简介
 
-- 没有搜索引擎收录,如何解决?试下AWS S3
-- 不支持中文搜索
-
-## Windows 10
-
-    D:/miniconda3/scripts/activate mkdocs
-    pip install mkdocs-material
-    pip install pymdown-extensions
-    mkdocs serve
-    // 编辑修改md文件...
-    mkdocs gh-deploy -c
-    curl https://huhongjun.github.io/demo
-
-## docker
-
-### 开发
-
-Start development server on http://localhost:8100
-
-    docker run --rm -it -p 8100:8000 \
-        -v ${PWD}:/docs squidfunk/mkdocs-material
-
-修改md文件, 浏览器动态刷新
-
-Build documentation
-
-    docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
-
-### 部署1: docker + md
-
-    docker run --name mkdocs-asmatrix -p 8001:8000 \
-        -v ${PWD}:/docs squidfunk/mkdocs-material
-
-### 部署2: GitHub Pages
-
-    // 默认gh-pages分支, .ssh提供github秘钥
-    docker run --rm -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
+产品发布网站,商业用途;  
+内容包括: 教育,电力,物流等;  
 
 ## 相关信息
 
