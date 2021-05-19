@@ -10,9 +10,15 @@
     mkdocs gh-deploy -c
     curl https://huhongjun.github.io/demo
 
+    mkdocs gh-deploy --config-file ../my-project/mkdocs.yml --remote-branch master
+
 ## docker
 
 ### 开发
+
+Mount the folder where your mkdocs.yml resides as a volume into /docs:
+
+    docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
 
 Start development server on http://localhost:8100
 
