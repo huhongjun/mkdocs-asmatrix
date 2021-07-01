@@ -16,14 +16,14 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy docs to GitHub Pages branch
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        uses: mhausenblas/mkdocs-deploy-gh-pages@1.16
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
           EXTRA_PACKAGES: build-base
 
       - name: Sync docs to AWS S3
-        uses: jakejarvis/s3-sync-action@1.16
+        uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
