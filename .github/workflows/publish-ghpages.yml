@@ -2,7 +2,7 @@ name: Publish docs to ghpages and S3
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
       AWS_S3_BUCKET_NAME: static.asmatrix.com
       AWS_REGION: ap-northeast-1
     steps:
-      - name: Checkout main
+      - name: Checkout master
         uses: actions/checkout@v2
 
       - name: Deploy docs to GitHub Pages branch
@@ -23,7 +23,7 @@ jobs:
           EXTRA_PACKAGES: build-base
 
       - name: Sync docs to AWS S3
-        uses: jakejarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@1.16
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
