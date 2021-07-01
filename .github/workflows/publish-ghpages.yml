@@ -1,4 +1,4 @@
-name: Publish docs to ghpages and S3
+name: deploy mkdocs to ghpages
 on:
   push:
     branches:
@@ -8,9 +8,6 @@ jobs:
   build:
     name: Deploy docs
     runs-on: ubuntu-latest
-    env: 
-      AWS_S3_BUCKET_NAME: static.asmatrix.com
-      AWS_REGION: ap-northeast-1
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
