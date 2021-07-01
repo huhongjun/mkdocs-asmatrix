@@ -4,7 +4,7 @@
 
 煜邦激光LiDAR数据处理分析软件，提供专业激光点云数据处理、展示与分析工具。
 
-![LiDAR 三维展示](http://static1.asmatrix.com/ImageLib/11-产品截图/lidar/lidar-002.jpg)
+![LiDAR 三维展示](http://static.asmatrix.com/ImageLib/11-产品截图/lidar/lidar-002.jpg)
 
 ## 系统功能
 
@@ -20,4 +20,4 @@
 
 电力行业典型应用——国家电网公司、南方电网公司：  
 
-![电力通道](http://static1.asmatrix.com/ImageLib/11-产品截图/lidar/lidar-001.jpg)
+![电力通道](http://static.asmatrix.com/ImageLib/11-产品截图/lidar/lidar-001.jpg)

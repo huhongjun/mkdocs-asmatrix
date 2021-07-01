@@ -31,4 +31,4 @@
 * 熟练使用工具和技巧，提高工作效率。
 
 
-![目标与实践管理课程主界面](http://static1.asmatrix.com/ImageLib/11-产品截图/course/cs-objective.png)
+![目标与实践管理课程主界面](http://static.asmatrix.com/ImageLib/11-产品截图/course/cs-objective.png)

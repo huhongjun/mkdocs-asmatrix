@@ -41,8 +41,8 @@
 
 EarthViewer-逐渐变暖的地球
 
-![EarthViewer-逐渐变暖的地球](http://static1.asmatrix.com/ImageLib/11-产品截图/EarthViewer/EarthViewer-逐渐变暖的地球.png)
+![EarthViewer-逐渐变暖的地球](http://static.asmatrix.com/ImageLib/11-产品截图/EarthViewer/EarthViewer-逐渐变暖的地球.png)
 
 EarthViewer-古代地球
 
-![EarthViewer-古代地球](http://static1.asmatrix.com/ImageLib/11-产品截图/EarthViewer/EarthViewer-古代地球.png)
+![EarthViewer-古代地球](http://static.asmatrix.com/ImageLib/11-产品截图/EarthViewer/EarthViewer-古代地球.png)

@@ -1,4 +1,4 @@
-name: Publish docs via GitHub Pages
+name: Publish docs to ghpages and S3
 on:
   push:
     branches:
@@ -8,13 +8,27 @@ jobs:
   build:
     name: Deploy docs
     runs-on: ubuntu-latest
+    env: 
+      AWS_S3_BUCKET_NAME: static.asmatrix.com
+      AWS_REGION: ap-northeast-1
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
 
-      - name: Deploy docs
+      - name: Deploy docs to GitHub Pages branch
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
           EXTRA_PACKAGES: build-base
+
+      - name: Sync docs to AWS S3
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ env.AWS_S3_BUCKET_NAME }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ env.AWS_REGION }}
+          SOURCE_DIR: 'site-asmatrix'  # optional: defaults to entire repository

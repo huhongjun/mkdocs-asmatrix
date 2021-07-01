@@ -13,6 +13,6 @@
 * 3.开发区用户：发布相关政策、招聘会信息、人事服务管理、人才评奖、提案建议、联系会议、项目管理等内容的管理;
 * 4.人才库用户：具有个人注册、学校批量注册、个人简历维护、发布求职信息、查询之外、接收面试通知、接收应聘信息和相关评价。
 
-![技能型人才就业服务平台](http://static1.asmatrix.com/ImageLib/11-产品截图/course/cs-objective.png)
+![技能型人才就业服务平台](http://static.asmatrix.com/ImageLib/11-产品截图/course/cs-objective.png)
  
  
