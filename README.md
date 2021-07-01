@@ -7,7 +7,7 @@
 
 ## 日志
 
-2021.07.01  GistPad edit this
+2021.07.01  GistPad edit this file
 2021.05.14  gitpod.io试用
 
 ## 相关信息
