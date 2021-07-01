@@ -11,8 +11,8 @@ on:
         required: true
         default: 'ap-east-1'
       bucket_dir:
-        description: 'Bucket Directory(site-docu,site-docu)'
-        required: true
+        description: 'Bucket Directory(eg. site-docu,defaults to the root of the bucket.)'
+        required: false
         default: 'site-asmatrix'
 
 jobs:
@@ -30,7 +30,8 @@ jobs:
 
       - name: Debug info
         run: |
-          echo "${{ github.event.inputs.bucket_name }},${{ github.event.inputs.bucket_dir }}"
+          echo "Bucket Name: ${{ github.event.inputs.bucket_name }}, Region: ${{ github.event.inputs.bucket_region }}"
+          echo "Bucker Sync Dir: ${{ github.event.inputs.bucket_dir }}"
           echo "PWD: ${PWD}"
           ls -al
 
@@ -43,7 +44,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           # AWS_REGION: ${{ env.AWS_REGION }}
           # AWS_S3_BUCKET: ${{ env.AWS_S3_BUCKET_NAME }}
-          AWS_REGION: ${{ github.event.inputs.bucket_dir }}
-          AWS_S3_BUCKET: ${{ github.event.inputs.bucket_name }}
           # SOURCE_DIR: ''  # optional: defaults to entire github repository
-          DEST_DIR: 'site-asmatrix' #dir inside S3 bucket
+          # DEST_DIR: 'site-asmatrix' #dir inside S3 bucket
+          AWS_REGION: ${{ github.event.inputs.bucket_region }}
+          AWS_S3_BUCKET: ${{ github.event.inputs.bucket_name }}
+          DEST_DIR: ${{ github.event.inputs.bucket_dir }}
