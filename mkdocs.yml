@@ -95,7 +95,6 @@ nav:
 # Configuration
 theme:
   name: material
-  logo: "img/favicon.ico"
   language: 'zh'
   palette:  
     primary: 'light blue' # 主色调,影响header,footer等的背景色

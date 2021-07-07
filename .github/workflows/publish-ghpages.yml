@@ -15,6 +15,6 @@ jobs:
       - name: Deploy docs to GitHub Pages branch
         uses: mhausenblas/mkdocs-deploy-gh-pages@1.16
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.huhongjun.github.io }}
           CONFIG_FILE: mkdocs.yml
           EXTRA_PACKAGES: build-base

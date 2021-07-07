@@ -44,5 +44,6 @@ Deploy GitHub Pages
     docker-compose up -d    # open http://localhost:8300
 
     docker exec -it  mk-asmatrix sh
-    docker exec -it  mk-asmatrix mkdocs build
-    docker exec -it  mk-asmatrix mkdocs gh-deploy --clean --force
+    docker exec -it  mk-asmatrix git init && mkdocs build && mkdocs gh-deploy --clean --force
+
+    git init && mkdocs gh-deploy -r git@github.com:huhongjun/huhongjun.github.io.git -b gh-pages-asmatrix --force
