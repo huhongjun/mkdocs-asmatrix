@@ -1,0 +1,8 @@
+server:
+  image: squidfunk/mkdocs-material:latest
+  container_name: mk-asmatrix
+  volumes:
+    - ${PWD}:/docs
+    - ~/.ssh/id_rsa:/root/.ssh/id_rsa
+  ports:
+    - 8300:8000

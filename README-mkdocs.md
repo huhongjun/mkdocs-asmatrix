@@ -1,20 +1,24 @@
 # mkdocs
 
-## Windows 10
+## intro
 
-    D:/miniconda3/scripts/activate mkdocs
-    pip install mkdocs-material
-    pip install pymdown-extensions
-    mkdocs serve
-    // 编辑修改md文件...
-    mkdocs gh-deploy -c
-    curl https://huhongjun.github.io/demo
+git config --local pull.rebase false
+
+--config-file ../my-project/mkdocs.yml
+
+## miniconda3
+
+    conda create -n mkdocs
+    activate mkdocs
+    pip install mkdocs-material pymdown-extensions
+    
+    mkdocs serve            # live server,update md files ...
+
+    mkdocs gh-deploy -c     # deploy to github pages, open https://huhongjun.github.io/site-desktop
 
     mkdocs gh-deploy --config-file ../my-project/mkdocs.yml --remote-branch master
 
 ## docker
-
-### 开发
 
 Mount the folder where your mkdocs.yml resides as a volume into /docs:
 
@@ -22,24 +26,23 @@ Mount the folder where your mkdocs.yml resides as a volume into /docs:
 
 Start development server on http://localhost:8100
 
-    docker run --name mkdoc --rm -it -p 8100:8000 \
-        -v ${PWD}:/docs squidfunk/mkdocs-material
+    docker run --name mkdoc --rm -it -p 8100:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
     docker exec -it mkdoc
-
-修改md文件, 浏览器动态刷新
 
 Build documentation
 
     docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
 
-### 部署1: docker + md
+Deploy GitHub Pages
 
-    docker run --name mkdocs-asmatrix -p 8001:8000 \
-        -v ${PWD}:/docs squidfunk/mkdocs-material
-
-### 部署2: GitHub Pages
-
-    // 默认gh-pages分支, .ssh提供github秘钥
-    docker run --rm -it -v ~/.ssh/id_rsa:/root/.ssh/id_rsa \
-        -e UID=1000 -e GID=1000 \
+    // default gh-pages branch, .ssh include github private key
+    docker run --rm -it -v ~/.ssh/id_rsa:/root/.ssh/id_rsa -e UID=1000 -e GID=1000 \
         -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
+
+## docker-compose
+
+    docker-compose up -d    # open http://localhost:8300
+
+    docker exec -it  mk-asmatrix sh
+    docker exec -it  mk-asmatrix mkdocs build
+    docker exec -it  mk-asmatrix mkdocs gh-deploy --clean --force

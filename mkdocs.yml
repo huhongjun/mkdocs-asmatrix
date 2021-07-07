@@ -1,6 +1,6 @@
 # Project information
 site_name: 盛世开源
-site_url: http://static.asmatrix.com/site-asmatrix
+site_url: http://huhongjun.github.io/subt-asmatrix
 site_author: Pastoral
 site_description: >-
   软件产品展示, 涵盖教育、电力和物流。
@@ -10,7 +10,9 @@ dev_addr: 192.168.1.63:8100
 # Repository, 支持github编辑链接
 repo_name: 'GitHub: 产品文档'
 repo_url: 'https://github.com/huhongjun/mkdocs-asmatrix'
-# edit_uri: 'blob/master/docs'
+edit_uri: 'blob/master/docs'
+remote_name: 'git@github.com:huhongjun/huhongjun.github.io.git'
+remote_branch: 'gh-pages-asmatrix'
 
 # Copyright
 copyright: Copyright &copy; 2016 - 2020 Hu Hongjun
